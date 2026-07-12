@@ -1,0 +1,39 @@
+/* ------- TABS ------- */
+body {
+  --tab-background-active: var(--background-primary);
+  --tab-text-color: var(--text-faint);
+  --tab-text-color-active: var(--text-muted);
+  --tab-text-color-focused: var(--text-muted);
+  --tab-text-color-focused-active: var(--text-muted);
+  --tab-text-color-focused-highlighted: var(--text-accent);
+  --tab-text-color-focused-active-current: var(--text-normal);
+  --tab-font-size: var(--font-ui-small);
+  --tab-font-weight: inherit;
+  --tab-container-background: var(--background-secondary);
+  --tab-divider-color: transparent;
+  --tab-outline-color: var(--divider-color);
+  --tab-outline-width: 1px;
+  --tab-curve: 3px;
+  --tab-radius: var(--radius-l);
+  --tab-radius-active: 13px 13px 0 0;
+  --tab-width: 200px;
+  --tab-max-width: 350px;
+
+  /* Stacked tabs */
+  --tab-stacked-pane-width: 700px;
+  --tab-stacked-header-width: var(--header-height);
+  --tab-stacked-font-size: var(--font-ui-small);
+  --tab-stacked-font-weight: 400;
+  --tab-stacked-text-align: start;
+  --tab-stacked-text-transform: rotate(0deg);
+  --tab-stacked-text-writing-mode: vertical-lr;
+  --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
+
+  /* Mobile tab switcher */
+  --tab-switcher-menubar-background: linear-gradient(to top, var(--background-secondary), transparent);
+  --tab-switcher-background: var(--background-secondary);
+  --tab-switcher-preview-radius: var(--radius-xl);
+  --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2);
+  --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05);
+  --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent);
+}

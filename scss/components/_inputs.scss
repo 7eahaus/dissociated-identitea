@@ -1,0 +1,60 @@
+/* ------- INPUTS ------- */
+textarea,
+.multi-select-container,
+input.metadata-input-text,
+input[type="date"],
+input[type="datetime-local"],
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+input[type="number"] {
+  border-radius: var(--radius-m);
+  border: var(--input-border-width) solid var(--background-modifier-border);
+}
+
+textarea:hover,
+.multi-select-container:hover,
+input.metadata-input-text:hover,
+input[type="date"]:hover,
+input[type="datetime-local"]:hover,
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="search"]:hover,
+input[type="password"]:hover,
+input[type="number"]:hover {
+  border-color: var(--color-accent-2);
+}
+
+textarea:active,
+.multi-select-container:active,
+input.metadata-input-text:active,
+input[type="date"]:active,
+input[type="datetime-local"]:active,
+input[type="text"]:active,
+input[type="email"]:active,
+input[type="search"]:active,
+input[type="password"]:active,
+input[type="number"]:active,
+textarea:focus,
+.multi-select-container:focus,
+input.metadata-input-text:focus,
+input[type="date"]:focus,
+input[type="datetime-local"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="search"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+textarea:focus-visible,
+.multi-select-container:focus-visible,
+input.metadata-input-text:focus-visible,
+input[type="date"]:focus-visible,
+input[type="datetime-local"]:focus-visible,
+input[type="text"]:focus-visible,
+input[type="email"]:focus-visible,
+input[type="search"]:focus-visible,
+input[type="password"]:focus-visible,
+input[type="number"]:focus-visible {
+  border-color: var(--color-accent);
+}

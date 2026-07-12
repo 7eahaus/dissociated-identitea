@@ -1,0 +1,727 @@
+/* ------- STYLE SETTINGS PLUGIN ------- */
+/* @settings
+
+name: ⊹₊˚‧︵‿₊᧔ෆ᧓ Dissociated IdentiTea ᧔ෆ᧓₊‿︵‧˚₊⊹
+id: dit-theme-settings
+settings:
+  - id: theme-info
+    title: "An Altered Thinking Space"
+    description: if you see an issue with the theme or want to suggest a feature, please submit an issue on [github](https://github.com/7eahaus/dissociated-identitea). if you want to help with development, you can find me in the [obsidian members group discord](https://discord.gg/obsidianmd) under the same username as on github. if you want to support my work, you can [buy me a coffee](https://ko-fi.com/7eahaus).
+    markdown: true
+    type: info-text
+    level: 0
+
+  - id: dit-subtheme-heading
+    title: "✎ᝰ.ᐟ⋆⑅˚₊ Subtheme"
+    type: heading
+    level: 1
+    collapsed: true
+  - id: dit-subtheme-description
+    title: "𓂃✍︎ Description"
+    type: info-text
+    description: this theme has two categories of subthemes, a light and a dark, designed to be used with the corresponding main theme
+  - id: dit-light-subtheme
+    title: "☀️ Light Subtheme"
+    type: class-select
+    allowempty: true
+    default: ""
+    options:
+      - label: 🍏 second coming
+        value: dit-yagami
+      - label: 🗻 dew the dew
+        value: dit-everest
+      - label: 🥍 forever a fox
+        value: dit-palmetto-light
+      - label: 🐞 just a bug
+        value: dit-bug
+      - label: 💖 bubble pop
+        value: dit-sam
+      - label: 🚲 bike boy
+        value: dit-teshima
+      - label: 🌱 solar frog
+        value: dit-xavier
+  - id: dit-dark-subtheme
+    title: "🌙 Dark Subtheme"
+    type: class-select
+    allowempty: true
+    default: ""
+    options:
+      - label: 𓂀 futuristic horus
+        value: dit-ana
+      - label: 🏹 south wind
+        value: dit-hanzo
+      - label: 🔪 forever a fox
+        value: dit-palmetto-dark
+      - label: 🔥 from ashes
+        value: dit-touya
+      - label: 🪬 host
+        value: dit-sonny
+      - label: 🍇 liberator
+        value: dit-ramattra
+
+  - id: dit-colors-heading
+    title: "✎ᝰ.ᐟ⋆⑅˚₊ Colors"
+    type: heading
+    level: 1
+    collapsed: true
+  - id: dit-color-description
+    title: "𓂃✍︎ Description"
+    type: info-text
+    description: this section allows you to customize the colors used throughout the theme
+    markdown: true
+
+  - id: dit-rainbowcolors-heading
+    title: "➽───────❥ Rainbow Colors"
+    type: heading
+    level: 2
+  - id: dit-rainbowcolors-description
+    title: "𓂃✍︎ Description"
+    type: info-text
+    description: this section allows you to customize the rainbow colors used throughout the theme
+    markdown: true
+  - id: color-red
+    title: "⤷ Red"
+    type: variable-themed-color
+    format: hex
+    default-light: "#A7544E"
+    default-dark: "#E8645F"
+    alt-format:
+      - id: color-red-rgb
+        format: rgb
+        default-light: "167, 84, 78"
+        default-dark: "232, 100, 95"
+  - id: color-orange
+    title: "⤷ Orange"
+    type: variable-themed-color
+    format: hex
+    default-light: "#AE9054"
+    default-dark: "#EEAF68"
+    alt-format:
+      - id: color-orange-rgb
+        format: rgb
+        default-light: "174, 144, 84"
+        default-dark: "238, 175, 104"
+  - id: color-yellow
+    title: "⤷ Yellow"
+    type: variable-themed-color
+    format: hex
+    default-light: "#B3AE5A"
+    default-dark: "#EAEA90"
+    alt-format:
+      - id: color-yellow-rgb
+        format: rgb
+        default-light: "179, 174, 90"
+        default-dark: "234, 234, 144"
+  - id: color-green
+    title: "⤷ Green"
+    type: variable-themed-color
+    format: hex
+    default-light: "#7C9B4F"
+    default-dark: "#BEEAAD"
+    alt-format:
+      - id: color-green-rgb
+        format: rgb
+        default-light: "124, 155, 79"
+        default-dark: "190, 234, 173"
+  - id: color-cyan
+    title: "⤷ Cyan"
+    type: variable-themed-color
+    format: hex
+    default-light: "#4EB3B3"
+    default-dark: "#7ED7D7"
+    alt-format:
+      - id: color-cyan-rgb
+        format: rgb
+        default-light: "78, 179, 179"
+        default-dark: "126, 215, 215"
+  - id: color-blue
+    title: "⤷ Blue"
+    type: variable-themed-color
+    format: hex
+    default-light: "#4A90E2"
+    default-dark: "#50BFE6"
+    alt-format:
+      - id: color-blue-rgb
+        format: rgb
+        default-light: "74, 144, 226"
+        default-dark: "80, 191, 230"
+  - id: color-purple
+    title: "⤷ Purple"
+    type: variable-themed-color
+    format: hex
+    default-light: "#575096"
+    default-dark: "#9B8BD4"
+    alt-format:
+      - id: color-purple-rgb
+        format: rgb
+        default-light: "87, 80, 150"
+        default-dark: "155, 139, 212"
+  - id: color-pink
+    title: "⤷ Pink"
+    type: variable-themed-color
+    format: hex
+    default-light: "#915394"
+    default-dark: "#DD94E3"
+    alt-format:
+      - id: color-pink-rgb
+        format: rgb
+        default-light: "145, 83, 148"
+        default-dark: "221, 148, 227"
+  - id: color-gray
+    title: "⤷ Gray"
+    type: variable-themed-color
+    format: hex
+    default-light: "#808080"
+    default-dark: "#9E9E9E"
+    alt-format:
+      - id: color-gray-rgb
+        format: rgb
+        default-light: "128, 128, 128"
+        default-dark: "158, 158, 158"
+
+
+  - id: dit-headingcolor-heading
+    title: "➽───────❥ Heading Colors"
+    type: heading
+    level: 2
+  - id: dit-headingcolor-description
+    title: "𓂃✍︎ Description"
+    type: info-text
+    description: this changes the color of the inline titles and headings
+    markdown: true
+  - id: inline-title-color
+    title: "⤷ Inline Title"
+    type: variable-select
+    default: var(--color-accent)
+    options:
+      - label: accent color
+        value: var(--color-accent)
+      - label: red
+        value: var(--color-red)
+      - label: orange
+        value: var(--color-orange)
+      - label: yellow
+        value: var(--color-yellow)
+      - label: green
+        value: var(--color-green)
+      - label: cyan
+        value: var(--color-cyan)
+      - label: blue
+        value: var(--color-blue)
+      - label: purple
+        value: var(--color-purple)
+      - label: pink
+        value: var(--color-pink)
+      - label: gray
+        value: var(--color-gray)
+  - id: h1-color
+    title: "⤷ Heading 1 Color"
+    type: variable-select
+    default: var(--color-red)
+    options:
+      - label: accent color
+        value: var(--color-accent)
+      - label: red
+        value: var(--color-red)
+      - label: orange
+        value: var(--color-orange)
+      - label: yellow
+        value: var(--color-yellow)
+      - label: green
+        value: var(--color-green)
+      - label: cyan
+        value: var(--color-cyan)
+      - label: blue
+        value: var(--color-blue)
+      - label: purple
+        value: var(--color-purple)
+      - label: pink
+        value: var(--color-pink)
+      - label: gray
+        value: var(--color-gray)
+  - id: h2-color
+    title: "⤷ Heading 2 Color"
+    type: variable-select
+    default: var(--color-orange)
+    options:
+      - label: accent color
+        value: var(--color-accent)
+      - label: red
+        value: var(--color-red)
+      - label: orange
+        value: var(--color-orange)
+      - label: yellow
+        value: var(--color-yellow)
+      - label: green
+        value: var(--color-green)
+      - label: cyan
+        value: var(--color-cyan)
+      - label: blue
+        value: var(--color-blue)
+      - label: purple
+        value: var(--color-purple)
+      - label: pink
+        value: var(--color-pink)
+      - label: gray
+        value: var(--color-gray)
+  - id: h3-color
+    title: "⤷ Heading 3 Color"
+    type: variable-select
+    default: var(--color-yellow)
+    options:
+      - label: accent color
+        value: var(--color-accent)
+      - label: red
+        value: var(--color-red)
+      - label: orange
+        value: var(--color-orange)
+      - label: yellow
+        value: var(--color-yellow)
+      - label: green
+        value: var(--color-green)
+      - label: cyan
+        value: var(--color-cyan)
+      - label: blue
+        value: var(--color-blue)
+      - label: purple
+        value: var(--color-purple)
+      - label: pink
+        value: var(--color-pink)
+      - label: gray
+        value: var(--color-gray)
+  - id: h4-color
+    title: "⤷ Heading 4 Color"
+    type: variable-select
+    default: var(--color-green)
+    options:
+      - label: accent color
+        value: var(--color-accent)
+      - label: red
+        value: var(--color-red)
+      - label: orange
+        value: var(--color-orange)
+      - label: yellow
+        value: var(--color-yellow)
+      - label: green
+        value: var(--color-green)
+      - label: cyan
+        value: var(--color-cyan)
+      - label: blue
+        value: var(--color-blue)
+      - label: purple
+        value: var(--color-purple)
+      - label: pink
+        value: var(--color-pink)
+      - label: gray
+        value: var(--color-gray)
+  - id: h5-color
+    title: "⤷ Heading 5 Color"
+    type: variable-select
+    default: var(--color-blue)
+    options:
+      - label: accent color
+        value: var(--color-accent)
+      - label: red
+        value: var(--color-red)
+      - label: orange
+        value: var(--color-orange)
+      - label: yellow
+        value: var(--color-yellow)
+      - label: green
+        value: var(--color-green)
+      - label: cyan
+        value: var(--color-cyan)
+      - label: blue
+        value: var(--color-blue)
+      - label: purple
+        value: var(--color-purple)
+      - label: pink
+        value: var(--color-pink)
+      - label: gray
+        value: var(--color-gray)
+  - id: h6-color
+    title: "⤷ Heading 6 Color"
+    type: variable-select
+    default: var(--color-purple)
+    options:
+      - label: accent color
+        value: var(--color-accent)
+      - label: red
+        value: var(--color-red)
+      - label: orange
+        value: var(--color-orange)
+      - label: yellow
+        value: var(--color-yellow)
+      - label: green
+        value: var(--color-green)
+      - label: cyan
+        value: var(--color-cyan)
+      - label: blue
+        value: var(--color-blue)
+      - label: purple
+        value: var(--color-purple)
+      - label: pink
+        value: var(--color-pink)
+      - label: gray
+        value: var(--color-gray)
+
+  - id: dit-typography-heading
+    title: "➽───────❥ Typography Colors"
+    type: heading
+    level: 2
+  - id: dit-typography-description
+    title: "𓂃✍︎ Description"
+    type: info-text
+    description: this changes the color of accented typography elements, such as links, highlights, text decoration, and more
+    markdown: true
+  - id: bold-color
+    title: "⤷ Bold"
+    type: variable-select
+    default: var(--color-accent)
+    options:
+      - label: accent color
+        value: var(--color-accent)
+      - label: red
+        value: var(--color-red)
+      - label: orange
+        value: var(--color-orange)
+      - label: yellow
+        value: var(--color-yellow)
+      - label: green
+        value: var(--color-green)
+      - label: cyan
+        value: var(--color-cyan)
+      - label: blue
+        value: var(--color-blue)
+      - label: purple
+        value: var(--color-purple)
+      - label: pink
+        value: var(--color-pink)
+      - label: gray
+        value: var(--color-gray)
+  - id: italic-color
+    title: "⤷ Italic"
+    type: variable-select
+    default: var(--color-accent)
+    options:
+      - label: accent color
+        value: var(--color-accent)
+      - label: red
+        value: var(--color-red)
+      - label: orange
+        value: var(--color-orange)
+      - label: yellow
+        value: var(--color-yellow)
+      - label: green
+        value: var(--color-green)
+      - label: cyan
+        value: var(--color-cyan)
+      - label: blue
+        value: var(--color-blue)
+      - label: purple
+        value: var(--color-purple)
+      - label: pink
+        value: var(--color-pink)
+      - label: gray
+        value: var(--color-gray)
+  - id: bolditalic-color
+    title: "⤷ Bold Italic"
+    type: variable-select
+    default: var(--color-accent)
+    options:
+      - label: accent color
+        value: var(--color-accent)
+      - label: red
+        value: var(--color-red)
+      - label: orange
+        value: var(--color-orange)
+      - label: yellow
+        value: var(--color-yellow)
+      - label: green
+        value: var(--color-green)
+      - label: cyan
+        value: var(--color-cyan)
+      - label: blue
+        value: var(--color-blue)
+      - label: purple
+        value: var(--color-purple)
+      - label: pink
+        value: var(--color-pink)
+      - label: gray
+        value: var(--color-gray)
+  - id: strikethrough-color
+    title: "⤷ Strikethrough"
+    type: variable-select
+    default: var(--color-accent)
+    options:
+      - label: accent color
+        value: var(--color-accent)
+      - label: red
+        value: var(--color-red)
+      - label: orange
+        value: var(--color-orange)
+      - label: yellow
+        value: var(--color-yellow)
+      - label: green
+        value: var(--color-green)
+      - label: cyan
+        value: var(--color-cyan)
+      - label: blue
+        value: var(--color-blue)
+      - label: purple
+        value: var(--color-purple)
+      - label: pink
+        value: var(--color-pink)
+      - label: gray
+        value: var(--color-gray)
+  - id: highlight-color
+    title: "⤷ Highlight"
+    type: variable-select
+    default: var(--color-accent)
+    options:
+      - label: accent color
+        value: var(--color-accent)
+      - label: red
+        value: var(--color-red)
+      - label: orange
+        value: var(--color-orange)
+      - label: yellow
+        value: var(--color-yellow)
+      - label: green
+        value: var(--color-green)
+      - label: cyan
+        value: var(--color-cyan)
+      - label: blue
+        value: var(--color-blue)
+      - label: purple
+        value: var(--color-purple)
+      - label: pink
+        value: var(--color-pink)
+      - label: gray
+        value: var(--color-gray)
+  - id: blockquote-border-color
+    title: "⤷ Blockquote Border"
+    type: variable-select
+    default: var(--color-accent)
+    options:
+      - label: accent color
+        value: var(--color-accent)
+      - label: red
+        value: var(--color-red)
+      - label: orange
+        value: var(--color-orange)
+      - label: yellow
+        value: var(--color-yellow)
+      - label: green
+        value: var(--color-green)
+      - label: cyan
+        value: var(--color-cyan)
+      - label: blue
+        value: var(--color-blue)
+      - label: purple
+        value: var(--color-purple)
+      - label: pink
+        value: var(--color-pink)
+      - label: gray
+        value: var(--color-gray)
+  - id: hr-color
+    title: "⤷ Horizontal Rule"
+    type: variable-select
+    default: var(--color-accent)
+    options:
+      - label: accent color
+        value: var(--color-accent)
+      - label: red
+        value: var(--color-red)
+      - label: orange
+        value: var(--color-orange)
+      - label: yellow
+        value: var(--color-yellow)
+      - label: green
+        value: var(--color-green)
+      - label: cyan
+        value: var(--color-cyan)
+      - label: blue
+        value: var(--color-blue)
+      - label: purple
+        value: var(--color-purple)
+      - label: pink
+        value: var(--color-pink)
+      - label: gray
+        value: var(--color-gray)
+  - id: link-color
+    title: "⤷ Link Color"
+    type: variable-select
+    default: hsla(var(--color-accent-3-hsl), 0.7)
+    options:
+      - label: from accent color
+        value: hsla(var(--color-accent-3-hsl), 0.7)
+      - label: red
+        value: rgba(var(--color-red-rgb), 0.7)
+      - label: orange
+        value: rgba(var(--color-orange-rgb), 0.7)
+      - label: yellow
+        value: rgba(var(--color-yellow-rgb), 0.7)
+      - label: green
+        value: rgba(var(--color-green-rgb), 0.7)
+      - label: cyan
+        value: rgba(var(--color-cyan-rgb), 0.7)
+      - label: blue
+        value: rgba(var(--color-blue-rgb), 0.7)
+      - label: purple
+        value: rgba(var(--color-purple-rgb), 0.7)
+      - label: pink
+        value: rgba(var(--color-pink-rgb), 0.7)
+      - label: gray
+        value: rgba(var(--color-gray-rgb), 0.7)
+  - id: link-color-hover
+    title: "⤷ Link Hover Color"
+    type: variable-select
+    default: var(--color-accent-3)
+    options:
+      - label: from accent color
+        value: var(--color-accent-3)
+      - label: red
+        value: var(--color-red)
+      - label: orange
+        value: var(--color-orange)
+      - label: yellow
+        value: var(--color-yellow)
+      - label: green
+        value: var(--color-green)
+      - label: cyan
+        value: var(--color-cyan)
+      - label: blue
+        value: var(--color-blue)
+      - label: purple
+        value: var(--color-purple)
+      - label: pink
+        value: var(--color-pink)
+      - label: gray
+        value: var(--color-gray)
+  - id: link-external-color
+    title: "⤷ External Link Color"
+    type: variable-select
+    default: hsla(var(--color-accent-2-hsl), 0.7)
+    options:
+      - label: from accent color
+        value: hsla(var(--color-accent-2-hsl), 0.7)
+      - label: red
+        value: rgba(var(--color-red-rgb), 0.7)
+      - label: orange
+        value: rgba(var(--color-orange-rgb), 0.7)
+      - label: yellow
+        value: rgba(var(--color-yellow-rgb), 0.7)
+      - label: green
+        value: rgba(var(--color-green-rgb), 0.7)
+      - label: cyan
+        value: rgba(var(--color-cyan-rgb), 0.7)
+      - label: blue
+        value: rgba(var(--color-blue-rgb), 0.7)
+      - label: purple
+        value: rgba(var(--color-purple-rgb), 0.7)
+      - label: pink
+        value: rgba(var(--color-pink-rgb), 0.7)
+      - label: gray
+        value: rgba(var(--color-gray-rgb), 0.7)
+  - id: link-external-color-hover
+    title: "⤷ External Link Hover Color"
+    type: variable-select
+    default: var(--color-accent-2)
+    options:
+      - label: fromaccent color
+        value: var(--color-accent-2)
+      - label: red
+        value: var(--color-red)
+      - label: orange
+        value: var(--color-orange)
+      - label: yellow
+        value: var(--color-yellow)
+      - label: green
+        value: var(--color-green)
+      - label: cyan
+        value: var(--color-cyan)
+      - label: blue
+        value: var(--color-blue)
+      - label: purple
+        value: var(--color-purple)
+      - label: pink
+        value: var(--color-pink)
+      - label: gray
+        value: var(--color-gray)
+  - id: list-marker-color
+    title: "⤷ List Marker Color"
+    type: variable-select
+    default: var(--color-accent-2)
+    options:
+      - label: from accent color
+        value: var(--color-accent-2)
+      - label: red
+        value: var(--color-red)
+      - label: orange
+        value: var(--color-orange)
+      - label: yellow
+        value: var(--color-yellow)
+      - label: green
+        value: var(--color-green)
+      - label: cyan
+        value: var(--color-cyan)
+      - label: blue
+        value: var(--color-blue)
+      - label: purple
+        value: var(--color-purple)
+      - label: pink
+        value: var(--color-pink)
+      - label: gray
+        value: var(--color-gray)
+  - id: list-marker-color-hover
+    title: "⤷ List Marker Hover Color"
+    type: variable-select
+    default: var(--color-accent)
+    options:
+      - label: accent color
+        value: var(--color-accent)
+      - label: red
+        value: var(--color-red)
+      - label: orange
+        value: var(--color-orange)
+      - label: yellow
+        value: var(--color-yellow)
+      - label: green
+        value: var(--color-green)
+      - label: cyan
+        value: var(--color-cyan)
+      - label: blue
+        value: var(--color-blue)
+      - label: purple
+        value: var(--color-purple)
+      - label: pink
+        value: var(--color-pink)
+      - label: gray
+        value: var(--color-gray)
+  - id: list-marker-color-collapsed
+    title: "⤷ List Marker Collapsed Color"
+    type: variable-select
+    default: var(--color-accent-1)
+    options:
+      - label: from accent color
+        value: var(--color-accent-2)
+      - label: red
+        value: var(--color-red)
+      - label: orange
+        value: var(--color-orange)
+      - label: yellow
+        value: var(--color-yellow)
+      - label: green
+        value: var(--color-green)
+      - label: cyan
+        value: var(--color-cyan)
+      - label: blue
+        value: var(--color-blue)
+      - label: purple
+        value: var(--color-purple)
+      - label: pink
+        value: var(--color-pink)
+      - label: gray
+        value: var(--color-gray)
+*/

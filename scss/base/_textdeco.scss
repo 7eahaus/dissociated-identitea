@@ -1,0 +1,41 @@
+/* ------- TEXT DECORATION ------- */
+/* --- BOLD --- */
+strong,
+.cm-strong,
+.cm-s-obsidian span.cm-formatting-strong,
+.cm-s-obsidian span.cm-strong {
+  --bold-color: var(--color-accent);
+  color: var(--bold-color);
+}
+
+/* --- ITALIC --- */
+em,
+.cm-em {
+  --italic-color: var(--color-accent);
+  color: var(--italic-color);
+}
+
+/* --- BOLD ITALIC --- */
+.cm-strong.cm-em,
+strong > em,
+em > strong {
+  --bolditalic-color: var(--color-accent) !important;
+  color: var(--bolditalic-color) !important;
+}
+
+/* --- STRIKETHROUGH --- */
+del,
+.cm-strikethrough {
+  --strikethrough-color: var(--color-accent);
+  color: var(--strikethrough-color);
+}
+
+.cm-strikethrough {
+  text-decoration: line-through;
+}
+
+/* --- HIGHLIGHT --- */
+.cm-s-obsidian span.cm-highlight {
+  --highlight-color: var(--color-accent);
+  background-color: var(--highlight-color);
+}

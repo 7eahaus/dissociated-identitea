@@ -1,0 +1,31 @@
+/* ------- HORIZONTAL RULE ------- */
+hr {
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+  border: none;
+  height: 3px;
+  background-image: linear-gradient(to right, var(--background-primary), var(--hr-color), var(--background-primary));
+  position: relative;
+  overflow: visible;
+}
+
+hr::before {
+  /* TODO: add SVG icon instead of kaomoji */
+  content: "   \\̅_̅/̷̚᭡.ೃ࿔*:･  ";
+  color: var(--hr-color);
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  padding: none;
+  background-color: var(--background-primary);
+}
+
+hr.workspace-leaf-resize-handle {
+  content: "";
+}
+
+hr.workspace-leaf-resize-handle::before {
+  content: "";
+}

@@ -1,0 +1,138 @@
+/* ------- DARK THEME ------- */
+.theme-dark {
+  color-scheme: dark;
+  --highlight-mix-blend-mode: lighten;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  /* --- base colors --- */
+  /* color bases */
+  --color-base-00: #1F2518;
+  --color-base-05: #21261A;
+  --color-base-10: #23281B;
+  --color-base-20: #272B1E;
+  --color-base-25: #2B2F21;
+  --color-base-30: #2C3122;
+  --color-base-35: #2E3324;
+  --color-base-40: #313626;
+  --color-base-50: #4C5238;
+  --color-base-60: #666D4A;
+  --color-base-70: #79815D;
+  --color-base-100: #A4AC86;
+  /* rainbow colors */
+  --color-red: #E8645F;
+  --color-orange: #EEAF68;
+  --color-yellow: #EAEA90;
+  --color-green: #BEEAAD;
+  --color-cyan: #7ED7D7;
+  --color-blue: #94B7D5;
+  --color-purple: #9B8BD4;
+  --color-pink: #DD94E3;
+  --color-gray: #9E9E9E;
+  --color-red-rgb: 232, 100, 95;
+  --color-orange-rgb: 238, 175, 104;
+  --color-yellow-rgb: 234, 234, 144;
+  --color-green-rgb: 190, 234, 173;
+  --color-cyan-rgb: 126, 215, 215;
+  --color-blue-rgb: 148, 183, 213;
+  --color-purple-rgb: 155, 139, 212;
+  --color-pink-rgb: 221, 148, 227;
+  --color-gray-rgb: 158, 158, 158;
+  --color-red-hsl: 4, 77%, 65%;
+  --color-orange-hsl: 35, 77%, 67%;
+  --color-yellow-hsl: 60, 77%, 65%;
+  --color-green-hsl: 120, 77%, 80%;
+  --color-cyan-hsl: 180, 77%, 68%;
+  --color-blue-hsl: 210, 77%, 70%;
+  --color-purple-hsl: 260, 77%, 70%;
+  --color-pink-hsl: 320, 77%, 73%;
+  --color-gray-hsl: 0, 0%, 62%;
+  /* --- color mappings --- */
+  /* backgrounds */
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-05);
+  --background-secondary: var(--color-base-10);
+  --background-secondary-alt: var(--color-base-20);
+  --background-modifier-hover: hsla(var(--interactive-accent-hsl), 0.1);
+  --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.3);
+  --background-modifier-border: var(--color-base-35);
+  --background-modifier-border-hover: var(--color-base-40);
+  --background-modifier-border-focus: var(--color-base-50);
+  --background-modifier-error-rgb: var(--color-red-rgb);
+  --background-modifier-error: var(--color-red);
+  --background-modifier-error-hover: var(--color-red);
+  --background-modifier-success-rgb: var(--color-green-rgb);
+  --background-modifier-success: var(--color-green);
+  --background-modifier-message: rgba(0, 0, 0, 0.9);
+  /* blockquotes */
+  --blockquote-border-thickness: 3px;
+  --blockquote-border-color: var(--color-accent);
+  --blockquote-font-style: normal;
+  --blockquote-color: inherit;
+  --blockquote-background-color: transparent;
+  /* headings */
+  --inline-title-color: var(--color-accent);
+  --h1-color: var(--color-red);
+  --h2-color: var(--color-orange);
+  --h3-color: var(--color-yellow);
+  --h4-color: var(--color-green);
+  --h5-color: var(--color-blue);
+  --h6-color: var(--color-purple);
+  /* horizontal rule */
+  --hr-color: var(--color-accent);
+  /* links */
+  --link-color: hsla(var(--color-accent-1-hsl), 0.7);
+  --link-color-hover: var(--color-accent-1);
+  --link-external-color: hsla(var(--color-accent-2-hsl), 0.7);
+  --link-external-color-hover: var(--color-accent-2);
+  --link-unresolved-color: var(--color-accent-3);
+  --link-unresolved-opacity: 0.7;
+  --link-unresolved-decoration-color: var(--color-accent-3);
+  /* lists */
+  --list-marker-color: var(--color-accent-2);
+  --list-marker-color-hover: var(--color-accent);
+  --list-marker-color-collapsed: var(--color-accent-1);
+  /* ribbon */
+  --ribbon-background: var(--color-base-30);
+  --ribbon-background-collapsed: var(--color-base-25);
+  /* sidedock vault profile */
+  --sidedock-background: var(--color-base-30);
+  /* status bar */
+  --status-bar-background: var(--color-base-30);
+  /* tags */
+  --tag-color: var(--text-on-accent-inverted);
+  --tag-color-hover: var(--text-on-accent);
+  --tag-background: var(--text-accent);
+  --tag-background-hover: var(--text-accent-hover);
+  --tag-border-width: 0px;
+  /* title bar */
+  --titlebar-background: var(--color-base-25);
+  --titlebar-background-focused: var(--color-base-30);
+  /* text */
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-60);
+  --text-on-accent: var(--color-base-00);
+  --text-on-accent-inverted: var(--color-base-100);
+  --text-error: var(--color-red);
+  --text-warning: var(--color-orange);
+  --text-success: var(--color-green);
+  --text-selection: hsla(var(--color-accent-hsl), 0.2);
+  --text-highlight-bg-rgb: 255, 208, 0;
+  --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
+  --text-accent: var(--color-accent);
+  --text-accent-hover: var(--color-accent-1); 
+  --interactive-normal: var(--background-primary); 
+  --interactive-hover: var(--background-primary-alt);
+  --interactive-accent-hsl: var(--color-accent-2-hsl);
+  --interactive-accent: var(--color-accent-2);
+  --interactive-accent-hover: var(--color-accent-3);
+  /* accent colors */
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1-hsl: calc(var(--accent-h) - 33), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075);
+  --color-accent-1: hsl(calc(var(--accent-h) - 33), calc(var(--accent-s) * 1.01), calc(var(--accent-l) * 1.075));
+  --color-accent-2-hsl: calc(var(--accent-h) + 33), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15);
+  --color-accent-2: hsl(calc(var(--accent-h) + 33), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15));
+  --color-accent-3-hsl: calc(var(--accent-h) - 67), calc(var(--accent-s) * 1.03), calc(var(--accent-l) * 1.225);
+  --color-accent-3: hsl(calc(var(--accent-h) - 67), calc(var(--accent-s) * 1.03), calc(var(--accent-l) * 1.225));
+}
