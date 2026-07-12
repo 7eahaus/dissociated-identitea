@@ -1,5 +1,5 @@
 # Dissociated IdentiTea
-An altered thinking space theme for [Obsidian](https://obsidian.md)
+An altered thinking space theme for [Obsidian](https://obsidian.md).
 
 ## Introduction
 Based around the fact that I can never seem to choose one coherant idea for a theme, I created **Dissociated IdentiTea** so I wouldn't have to. DIT is still in its very beginning stages, but I plan for it to have multiple subthemes with just enough customization options. Come take a journey into my crazy mind with me!
@@ -29,5 +29,3 @@ DIT features several custom checkboxes for you to use however your heart desires
 ### Subthemes
 DIT features a handful of subthemes to suit my (and your!) ever-changing desires. Each subtheme is almost like it's own unique person. Explore them and see which you like best!
 > Subthemes coming soon.
-
-## 
