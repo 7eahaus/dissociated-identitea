@@ -1,0 +1,32 @@
+/* "Dissociated IdentiTea" is an Obsidian theme created by TeaHaus Shindan (@7eahaus).
+https://github.com/7eahaus
+
+LICENSE
+Dissociated IdentiTea (https://github.com/7eahaus/dissociated-identitea) is an all rights reserved theme. All code is mine, except where otherwise noted. You may not reproduce this theme or use it for commercial purposes. You are free to edit the code as you see fit, so long as it is still recognizable as my theme. If you want to use my theme as a base or for snippets in your own, you are free to do so, but please do not remove these credits.
+
+If you like this theme, please consider supporting me!
+https://ko-fi.com/7eahaus
+Any questions or issues should be directed towards the GitHub page, or you can find me in the Obsidian Members Group Discord (https://discord.gg/obsidianmd). 
+*/
+
+/* ------------- BASE ------------- */
+@use "scss/base/_reset.scss";
+@use "scss/base/_typography.scss";
+@use "scss/base/_textdeco.scss";
+
+/* ------------- COMPONENTS ------------- */
+@use "scss/components/_bulletpoints.scss";
+@use "scss/components/_callouts.scss";
+@use "scss/components/_checkboxes.scss";
+@use "scss/components/_codeblocks.scss";
+@use "scss/components/_horizontalrule.scss";
+@use "scss/components/_inputs.scss";
+@use "scss/components/_ribbon.scss";
+@use "scss/components/_tabs.scss";
+
+/* ------------- THEMES ------------- */
+@use "scss/themes/_light.scss";
+@use "scss/themes/_dark.scss";
+
+/* ------------- PLUGINS ------------- */
+@use "scss/plugins/_stylesettings.scss";

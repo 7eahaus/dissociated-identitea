@@ -1,0 +1,29 @@
+/* ------- RIBBON ------- */
+body.dit-bottom-ribbon .workspace {
+ .workspace-ribbon.side-dock-ribbon {
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    left: 40%;
+    right: 40%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    flex-direction: row;
+    width: 20%;
+    margin-top: auto;
+    height: auto;
+    overflow: scroll;
+    justify-content: space-around;
+
+
+      .side-dock-actions {
+      display: flex;
+      flex-direction: row;
+      overflow: visible;
+      }
+
+      .workspace-ribbon.side-dock-ribbon::before, .sidebar-toggle-button.mod-left, .side-dock-settings {
+        display: none;
+    }
+  }
+}
