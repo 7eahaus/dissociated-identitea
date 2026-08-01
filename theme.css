@@ -1113,14 +1113,14 @@ body {
   --color-purple: #575096;
   --color-pink: #915394;
   --color-gray: #808080;
-  --color-red-rgb: 167, 84, 78;
+  --color-red-rgb: rgb(167, 84, 78);
   --color-orange-rgb: 174, 144, 84;
-  --color-yellow-rgb: 179, 174, 90;
-  --color-green-rgb: 124, 155, 79;
+  --color-yellow-rgb: rgb(179, 174, 90);
+  --color-green-rgb: rgb(124, 155, 79);
   --color-cyan-rgb: 78, 179, 179;
-  --color-blue-rgb: 87, 115, 152;
-  --color-purple-rgb: 87, 80, 150;
-  --color-pink-rgb: 145, 83, 148;
+  --color-blue-rgb: rgb(87, 115, 152);
+  --color-purple-rgb: rgb(87, 80, 150);
+  --color-pink-rgb: rgb(145, 83, 148);
   --color-gray-rgb: 128, 128, 128;
   --color-red-hsl: 6, 25%, 48%;
   --color-orange-hsl: 35, 20%, 51%;
@@ -1252,14 +1252,14 @@ body {
   --color-purple: #9B8BD4;
   --color-pink: #DD94E3;
   --color-gray: #9E9E9E;
-  --color-red-rgb: 232, 100, 95;
+  --color-red-rgb: rgb(232, 100, 95);
   --color-orange-rgb: 238, 175, 104;
-  --color-yellow-rgb: 234, 234, 144;
-  --color-green-rgb: 190, 234, 173;
+  --color-yellow-rgb: rgb(234, 234, 144);
+  --color-green-rgb: rgb(190, 234, 173);
   --color-cyan-rgb: 126, 215, 215;
-  --color-blue-rgb: 148, 183, 213;
-  --color-purple-rgb: 155, 139, 212;
-  --color-pink-rgb: 221, 148, 227;
+  --color-blue-rgb: rgb(148, 183, 213);
+  --color-purple-rgb: rgb(155, 139, 212);
+  --color-pink-rgb: rgb(221, 148, 227);
   --color-gray-rgb: 158, 158, 158;
   --color-red-hsl: 4, 77%, 65%;
   --color-orange-hsl: 35, 77%, 67%;
@@ -1921,21 +1921,21 @@ settings:
       - label: from accent color
         value: hsla(var(--color-accent-3-hsl), 0.7)
       - label: red
-        value: rgba(var(--color-red-rgb), 0.7)
+        value: color-mix(in srgb, var(--color-red-rgb) 70%, transparent)
       - label: orange
         value: rgba(var(--color-orange-rgb), 0.7)
       - label: yellow
-        value: rgba(var(--color-yellow-rgb), 0.7)
+        value: color-mix(in srgb, var(--color-yellow-rgb) 70%, transparent)
       - label: green
-        value: rgba(var(--color-green-rgb), 0.7)
+        value: color-mix(in srgb, var(--color-green-rgb) 70%, transparent)
       - label: cyan
         value: rgba(var(--color-cyan-rgb), 0.7)
       - label: blue
-        value: rgba(var(--color-blue-rgb), 0.7)
+        value: color-mix(in srgb, var(--color-blue-rgb) 70%, transparent)
       - label: purple
-        value: rgba(var(--color-purple-rgb), 0.7)
+        value: color-mix(in srgb, var(--color-purple-rgb) 70%, transparent)
       - label: pink
-        value: rgba(var(--color-pink-rgb), 0.7)
+        value: color-mix(in srgb, var(--color-pink-rgb) 70%, transparent)
       - label: gray
         value: rgba(var(--color-gray-rgb), 0.7)
   - id: link-color-hover
@@ -1971,21 +1971,21 @@ settings:
       - label: from accent color
         value: hsla(var(--color-accent-2-hsl), 0.7)
       - label: red
-        value: rgba(var(--color-red-rgb), 0.7)
+        value: color-mix(in srgb, var(--color-red-rgb) 70%, transparent)
       - label: orange
         value: rgba(var(--color-orange-rgb), 0.7)
       - label: yellow
-        value: rgba(var(--color-yellow-rgb), 0.7)
+        value: color-mix(in srgb, var(--color-yellow-rgb) 70%, transparent)
       - label: green
-        value: rgba(var(--color-green-rgb), 0.7)
+        value: color-mix(in srgb, var(--color-green-rgb) 70%, transparent)
       - label: cyan
         value: rgba(var(--color-cyan-rgb), 0.7)
       - label: blue
-        value: rgba(var(--color-blue-rgb), 0.7)
+        value: color-mix(in srgb, var(--color-blue-rgb) 70%, transparent)
       - label: purple
-        value: rgba(var(--color-purple-rgb), 0.7)
+        value: color-mix(in srgb, var(--color-purple-rgb) 70%, transparent)
       - label: pink
-        value: rgba(var(--color-pink-rgb), 0.7)
+        value: color-mix(in srgb, var(--color-pink-rgb) 70%, transparent)
       - label: gray
         value: rgba(var(--color-gray-rgb), 0.7)
   - id: link-external-color-hover
