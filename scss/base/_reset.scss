@@ -674,3 +674,19 @@ body {
 body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
   background-color: var(--sidedock-background);
 }
+
+.workspace-leaf,
+.workspace-split,
+.workspace-tabs,
+.workspace,
+.view-content {
+    background: transparent !important;
+}
+
+body {
+    background-image: var(--background-image) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}

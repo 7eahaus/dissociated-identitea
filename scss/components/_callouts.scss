@@ -1,40 +1,40 @@
 /* ------- CUSTOM CALLOUTS ------- */
 .callout[data-callout="creative"] { 
-  --callout-color: var(--color-green-rgb); 
+  --callout-color: var(--color-green); 
   --callout-icon: lucide-palette;
 }
 
 .callout[data-callout="rose"] {
-  --callout-color: var(--color-purple-rgb); 
+  --callout-color: var(--color-purple); 
   --callout-icon: lucide-flower;
 }
 
 .callout[data-callout="bud"] {
-  --callout-color: var(--color-pink-rgb); 
+  --callout-color: var(--color-pink); 
   --callout-icon: lucide-bean;
 }
 
 .callout[data-callout="thorn"] {
-  --callout-color: var(--color-red-rgb); 
+  --callout-color: var(--color-red); 
   --callout-icon: lucide-mouse-pointer-click;
 }
 
 .callout[data-callout="idea"] {
-  --callout-color: var(--color-yellow-rgb); 
+  --callout-color: var(--color-yellow); 
   --callout-icon: lucide-lightbulb;
 }
 
 .callout[data-callout="experiment"] {
-  --callout-color: var(--color-purple-rgb); 
+  --callout-color: var(--color-purple); 
   --callout-icon: lucide-flask-conical;
 }
 
 .callout[data-callout="like"] {
-  --callout-color: var(--color-blue-rgb); 
+  --callout-color: var(--color-blue); 
   --callout-icon: lucide-thumbs-up;
 }
 
 .callout[data-callout="money"] {
-  --callout-color: var(--color-green-rgb);
+  --callout-color: var(--color-green);
   --callout-icon: lucide-banknote;
 }
