@@ -4,14 +4,14 @@ strong,
 .cm-strong,
 .cm-s-obsidian span.cm-formatting-strong,
 .cm-s-obsidian span.cm-strong {
-  --bold-color: var(--color-accent);
+  --bold-color: var(--color-blue);
   color: var(--bold-color);
 }
 
 /* --- ITALIC --- */
 em,
 .cm-em {
-  --italic-color: var(--color-accent);
+  --italic-color: var(--color-red);
   color: var(--italic-color);
 }
 
@@ -19,14 +19,14 @@ em,
 .cm-strong.cm-em,
 strong > em,
 em > strong {
-  --bolditalic-color: var(--color-accent) !important;
+  --bolditalic-color: var(--color-purple) !important;
   color: var(--bolditalic-color) !important;
 }
 
 /* --- STRIKETHROUGH --- */
 del,
 .cm-strikethrough {
-  --strikethrough-color: var(--color-accent);
+  --strikethrough-color: var(--color-pink);
   color: var(--strikethrough-color);
 }
 
@@ -36,6 +36,7 @@ del,
 
 /* --- HIGHLIGHT --- */
 .cm-s-obsidian span.cm-highlight {
-  --highlight-color: var(--color-accent);
+  --highlight-color: var(--color-yellow);
   background-color: var(--highlight-color);
+  color: var(--text-on-accent);
 }

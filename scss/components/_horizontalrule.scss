@@ -4,13 +4,13 @@ hr {
   margin-block-end: 2em;
   border: none;
   height: 3px;
-  background-image: linear-gradient(to right, var(--background-primary), var(--hr-color), var(--background-primary));
+  background-image: linear-gradient(to right, var(--background-secondary), var(--hr-color), var(--background-secondary));
   position: relative;
   overflow: visible;
+  border-radius: 25px;
 }
 
 hr::before {
-  /* TODO: add SVG icon instead of kaomoji */
   content: "   \\̅_̅/̷̚᭡.ೃ࿔*:･  ";
   color: var(--hr-color);
   display: inline-block;
@@ -19,7 +19,9 @@ hr::before {
   bottom: 0;
   transform: translate(-50%, 50%);
   padding: none;
-  background-color: var(--background-primary);
+  background-image: var(--background-image);
+  border-radius: 13px;
+
 }
 
 hr.workspace-leaf-resize-handle {

@@ -83,101 +83,101 @@ settings:
     title: "⤷ Red"
     type: variable-themed-color
     format: hex
-    default-light: "#A7544E"
-    default-dark: "#E8645F"
+    default-light: "#8C3033"
+    default-dark: "#DA9296"
     alt-format:
       - id: color-red-rgb
         format: rgb
-        default-light: "167, 84, 78"
-        default-dark: "232, 100, 95"
+        default-light: "140, 48, 51"
+        default-dark: "218, 146, 150"
   - id: color-orange
     title: "⤷ Orange"
     type: variable-themed-color
     format: hex
-    default-light: "#AE9054"
-    default-dark: "#EEAF68"
+    default-light: "#CE7F3D"
+    default-dark: "#FCC698"
     alt-format:
       - id: color-orange-rgb
         format: rgb
-        default-light: "174, 144, 84"
-        default-dark: "238, 175, 104"
+        default-light: "206, 127, 61"
+        default-dark: "252, 198, 152"
   - id: color-yellow
     title: "⤷ Yellow"
     type: variable-themed-color
     format: hex
-    default-light: "#B3AE5A"
-    default-dark: "#EAEA90"
+    default-light: "#C5B36B"
+    default-dark: "#F5E7AA"
     alt-format:
       - id: color-yellow-rgb
         format: rgb
-        default-light: "179, 174, 90"
-        default-dark: "234, 234, 144"
+        default-light: "197, 179, 107"
+        default-dark: "245, 231, 170"
   - id: color-green
     title: "⤷ Green"
     type: variable-themed-color
     format: hex
-    default-light: "#7C9B4F"
-    default-dark: "#BEEAAD"
+    default-light: "#4D6E51"
+    default-dark: "#ADC5AB"
     alt-format:
       - id: color-green-rgb
         format: rgb
-        default-light: "124, 155, 79"
-        default-dark: "190, 234, 173"
+        default-light: "77, 110, 81"
+        default-dark: "173, 197, 171"
   - id: color-cyan
     title: "⤷ Cyan"
     type: variable-themed-color
     format: hex
-    default-light: "#4EB3B3"
-    default-dark: "#7ED7D7"
+    default-light: "#5D9A9D"
+    default-dark: "#B9E7E7"
     alt-format:
       - id: color-cyan-rgb
         format: rgb
-        default-light: "78, 179, 179"
-        default-dark: "126, 215, 215"
+        default-light: "93, 154, 157"
+        default-dark: "185, 231, 231"
   - id: color-blue
     title: "⤷ Blue"
     type: variable-themed-color
     format: hex
-    default-light: "#4A90E2"
-    default-dark: "#50BFE6"
+    default-light: "#446288"
+    default-dark: "#AECCEE"
     alt-format:
       - id: color-blue-rgb
         format: rgb
-        default-light: "74, 144, 226"
-        default-dark: "80, 191, 230"
+        default-light: "68, 98, 136"
+        default-dark: "174, 204, 238"
   - id: color-purple
     title: "⤷ Purple"
     type: variable-themed-color
     format: hex
-    default-light: "#575096"
-    default-dark: "#9B8BD4"
+    default-light: "#744E78"
+    default-dark: "#C5ADE1"
     alt-format:
       - id: color-purple-rgb
         format: rgb
-        default-light: "87, 80, 150"
-        default-dark: "155, 139, 212"
+        default-light: "116, 78, 120"
+        default-dark: "197, 173, 225"
   - id: color-pink
     title: "⤷ Pink"
     type: variable-themed-color
     format: hex
-    default-light: "#915394"
-    default-dark: "#DD94E3"
+    default-light: "#AC5373"
+    default-dark: "#F7C2D9"
     alt-format:
       - id: color-pink-rgb
         format: rgb
-        default-light: "145, 83, 148"
-        default-dark: "221, 148, 227"
+        default-light: "172, 83, 115"
+        default-dark: "247, 194, 217"
   - id: color-gray
     title: "⤷ Gray"
     type: variable-themed-color
     format: hex
-    default-light: "#808080"
-    default-dark: "#9E9E9E"
+    default-light: "#777777"
+    default-dark: "#9C9C9C"
     alt-format:
       - id: color-gray-rgb
         format: rgb
-        default-light: "128, 128, 128"
-        default-dark: "158, 158, 158"
+        default-light: "119, 119, 119"
+        default-dark: "156, 156, 156"
 
 
   - id: dit-headingcolor-heading
@@ -192,8 +192,12 @@ settings:
   - id: inline-title-color
     title: "⤷ Inline Title"
     type: variable-select
-    default: var(--color-accent)
+    default: var(--dit-heading-dark)
     options:
+      - label: heading dark color
+        value: var(--dit-heading-dark)
+      - label: heading color
+        value: var(--dit-heading)
       - label: accent color
         value: var(--color-accent)
       - label: red
@@ -217,8 +221,10 @@ settings:
   - id: h1-color
     title: "⤷ Heading 1 Color"
     type: variable-select
-    default: var(--color-red)
+    default: var(--dit-heading)
     options:
+      - label: heading color
+        value: var(--dit-heading)
       - label: accent color
         value: var(--color-accent)
       - label: red
@@ -242,8 +248,10 @@ settings:
   - id: h2-color
     title: "⤷ Heading 2 Color"
     type: variable-select
-    default: var(--color-orange)
+    default: var(--dit-heading)
     options:
+      - label: heading color
+        value: var(--dit-heading)
       - label: accent color
         value: var(--color-accent)
       - label: red
@@ -267,8 +275,10 @@ settings:
   - id: h3-color
     title: "⤷ Heading 3 Color"
     type: variable-select
-    default: var(--color-yellow)
+    default: var(--dit-heading)
     options:
+      - label: heading color
+        value: var(--dit-heading)
       - label: accent color
         value: var(--color-accent)
       - label: red
@@ -292,8 +302,10 @@ settings:
   - id: h4-color
     title: "⤷ Heading 4 Color"
     type: variable-select
-    default: var(--color-green)
+    default: var(--dit-heading)
     options:
+      - label: heading color
+        value: var(--dit-heading)
       - label: accent color
         value: var(--color-accent)
       - label: red
@@ -317,8 +329,10 @@ settings:
   - id: h5-color
     title: "⤷ Heading 5 Color"
     type: variable-select
-    default: var(--color-blue)
+    default: var(--dit-heading)
     options:
+      - label: heading color
+        value: var(--dit-heading)
       - label: accent color
         value: var(--color-accent)
       - label: red
@@ -342,8 +356,10 @@ settings:
   - id: h6-color
     title: "⤷ Heading 6 Color"
     type: variable-select
-    default: var(--color-purple)
+    default: var(--dit-heading)
     options:
+      - label: heading color
+        value: var(--dit-heading)
       - label: accent color
         value: var(--color-accent)
       - label: red
@@ -377,7 +393,7 @@ settings:
   - id: bold-color
     title: "⤷ Bold"
     type: variable-select
-    default: var(--color-accent)
+    default: var(--color-blue)
     options:
       - label: accent color
         value: var(--color-accent)
@@ -402,7 +418,7 @@ settings:
   - id: italic-color
     title: "⤷ Italic"
     type: variable-select
-    default: var(--color-accent)
+    default: var(--color-red)
     options:
       - label: accent color
         value: var(--color-accent)
@@ -427,7 +443,7 @@ settings:
   - id: bolditalic-color
     title: "⤷ Bold Italic"
     type: variable-select
-    default: var(--color-accent)
+    default: var(--color-purple)
     options:
       - label: accent color
         value: var(--color-accent)
@@ -452,7 +468,7 @@ settings:
   - id: strikethrough-color
     title: "⤷ Strikethrough"
     type: variable-select
-    default: var(--color-accent)
+    default: var(--color-pink)
     options:
       - label: accent color
         value: var(--color-accent)
@@ -477,7 +493,7 @@ settings:
   - id: highlight-color
     title: "⤷ Highlight"
     type: variable-select
-    default: var(--color-accent)
+    default: var(--color-yellow)
     options:
       - label: accent color
         value: var(--color-accent)
@@ -502,8 +518,10 @@ settings:
   - id: blockquote-border-color
     title: "⤷ Blockquote Border"
     type: variable-select
-    default: var(--color-accent)
+    default: var(--dit-border)
     options:
+      - label: border color
+        value: var(--dit-border)
       - label: accent color
         value: var(--color-accent)
       - label: red
@@ -552,10 +570,14 @@ settings:
   - id: link-color
     title: "⤷ Link Color"
     type: variable-select
-    default: hsla(var(--color-accent-3-hsl), 0.7)
+    default: var(--color-berry)
     options:
-      - label: from accent color
-        value: hsla(var(--color-accent-3-hsl), 0.7)
+      - label: berry color
+        value: var(--color-berry)
+      - label: vine color
+        value: var(--color-vine)
+      - label: accent color
+        value: var(--color-accent)
       - label: red
         value: rgba(var(--color-red-rgb), 0.7)
       - label: orange
@@ -577,10 +599,14 @@ settings:
   - id: link-color-hover
     title: "⤷ Link Hover Color"
     type: variable-select
-    default: var(--color-accent-3)
+    default: var(--color-berry-hover)
     options:
-      - label: from accent color
-        value: var(--color-accent-3)
+      - label: berry hover color
+        value: var(--color-berry-hover)
+      - label: vine hover color
+        value: var(--color-vine-hover)
+      - label: accent color
+        value: var(--color-accent)
       - label: red
         value: var(--color-red)
       - label: orange
@@ -602,34 +628,43 @@ settings:
   - id: link-external-color
     title: "⤷ External Link Color"
     type: variable-select
-    default: hsla(var(--color-accent-2-hsl), 0.7)
+    default: var(--dit-vine)
     options:
-      - label: from accent color
-        value: hsla(var(--color-accent-2-hsl), 0.7)
+      - label: berry color
+        value: var(--dit-berry)
+      - label: vine color
+        value: var(--dit-vine)
+      - label: accent color
+        value: var(--color-accent)
       - label: red
-        value: rgba(var(--color-red-rgb), 0.7)
+        value: var(--color-red)
       - label: orange
-        value: rgba(var(--color-orange-rgb), 0.7)
+        value: var(--color-orange)
       - label: yellow
-        value: rgba(var(--color-yellow-rgb), 0.7)
+        value: var(--color-yellow)
       - label: green
-        value: rgba(var(--color-green-rgb), 0.7)
+        value: var(--color-green)
       - label: cyan
-        value: rgba(var(--color-cyan-rgb), 0.7)
+        value: var(--color-cyan)
       - label: blue
-        value: rgba(var(--color-blue-rgb), 0.7)
+        value: var(--color-blue)
       - label: purple
-        value: rgba(var(--color-purple-rgb), 0.7)
+        value: var(--color-purple)
       - label: pink
-        value: rgba(var(--color-pink-rgb), 0.7)
+        value: var(--color-pink)
       - label: gray
-        value: rgba(var(--color-gray-rgb), 0.7)
+        value: var(--color-gray)
   - id: link-external-color-hover
     title: "⤷ External Link Hover Color"
     type: variable-select
-    default: var(--color-accent-2)
+    default: var(--dit-vine-hover)
     options:
-      - label: fromaccent color
+      - label: berry hover color
+        value: var(--dit-berry-hover)
+      - label: vine hover color
+        value: var(--dit-vine-hover)
+      - label: accent color
+        value: var(--color-accent)
         value: var(--color-accent-2)
       - label: red
         value: var(--color-red)
@@ -652,33 +687,12 @@ settings:
   - id: list-marker-color
     title: "⤷ List Marker Color"
     type: variable-select
-    default: var(--color-accent-2)
+    default: var(--dit-berry)
     options:
-      - label: from accent color
-        value: var(--color-accent-2)
-      - label: red
-        value: var(--color-red)
-      - label: orange
-        value: var(--color-orange)
-      - label: yellow
-        value: var(--color-yellow)
-      - label: green
-        value: var(--color-green)
-      - label: cyan
-        value: var(--color-cyan)
-      - label: blue
-        value: var(--color-blue)
-      - label: purple
-        value: var(--color-purple)
-      - label: pink
-        value: var(--color-pink)
-      - label: gray
-        value: var(--color-gray)
-  - id: list-marker-color-hover
-    title: "⤷ List Marker Hover Color"
-    type: variable-select
-    default: var(--color-accent)
-    options:
+      - label: berry color
+        value: var(--dit-berry)
+      - label: vine color
+        value: var(--dit-vine)
       - label: accent color
         value: var(--color-accent)
       - label: red
@@ -699,13 +713,19 @@ settings:
         value: var(--color-pink)
       - label: gray
         value: var(--color-gray)
-  - id: list-marker-color-collapsed
-    title: "⤷ List Marker Collapsed Color"
+      - label: berry color
+        value: var(--dit-berry)
+  - id: list-marker-color-hover
+    title: "⤷ List Marker Hover Color"
     type: variable-select
-    default: var(--color-accent-1)
+    default: var(--dit-berry-hover)
     options:
-      - label: from accent color
-        value: var(--color-accent-2)
+      - label: berry hover color
+        value: var(--dit-berry-hover)
+      - label: vine hover color
+        value: var(--dit-vine-hover)
+      - label: accent color
+        value: var(--color-accent)
       - label: red
         value: var(--color-red)
       - label: orange
@@ -724,4 +744,50 @@ settings:
         value: var(--color-pink)
       - label: gray
         value: var(--color-gray)
+      - label: berry color
+        value: var(--dit-berry)
+  - id: list-marker-color-collapsed
+    title: "⤷ List Marker Collapsed Color"
+    type: variable-select
+    default: var(--dit-berry)
+    options:
+      - label: berry color
+        value: var(--dit-berry)
+      - label: vine color
+        value: var(--dit-vine)
+      - label: accent color
+        value: var(--color-accent)
+      - label: red
+        value: var(--color-red)
+      - label: orange
+        value: var(--color-orange)
+      - label: yellow
+        value: var(--color-yellow)
+      - label: green
+        value: var(--color-green)
+      - label: cyan
+        value: var(--color-cyan)
+      - label: blue
+        value: var(--color-blue)
+      - label: purple
+        value: var(--color-purple)
+      - label: pink
+        value: var(--color-pink)
+      - label: gray
+        value: var(--color-gray)
+  - id: dit-components-heading
+    title: "✎ᝰ.ᐟ⋆⑅˚₊ Components"
+    type: heading
+    level: 1
+    collapsed: true
+  - id: dit-components-description
+    title: "𓂃✍︎ Description"
+    type: info-text
+    description: this section allows you to customize some of the components used throughout the theme
+    markdown: true
+  - id: dit-ribbon-position
+    title: "⤷ Ribbon Position"
+    type: class-toggle
+    default: false
+    description: this changes the position of the ribbon from the default right position to a bottom position
 */
