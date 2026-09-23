@@ -579,23 +579,23 @@ settings:
       - label: accent color
         value: var(--color-accent)
       - label: red
-        value: rgba(var(--color-red-rgb), 0.7)
+        value: var(--color-red)
       - label: orange
-        value: rgba(var(--color-orange-rgb), 0.7)
+        value: var(--color-orange)
       - label: yellow
-        value: rgba(var(--color-yellow-rgb), 0.7)
+        value: var(--color-yellow)
       - label: green
-        value: rgba(var(--color-green-rgb), 0.7)
+        value: var(--color-green)
       - label: cyan
-        value: rgba(var(--color-cyan-rgb), 0.7)
+        value: var(--color-cyan)
       - label: blue
-        value: rgba(var(--color-blue-rgb), 0.7)
+        value: var(--color-blue)
       - label: purple
-        value: rgba(var(--color-purple-rgb), 0.7)
+        value: var(--color-purple)
       - label: pink
-        value: rgba(var(--color-pink-rgb), 0.7)
+        value: var(--color-pink)
       - label: gray
-        value: rgba(var(--color-gray-rgb), 0.7)
+        value: var(--color-gray)
   - id: link-color-hover
     title: "⤷ Link Hover Color"
     type: variable-select
