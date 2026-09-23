@@ -2089,6 +2089,7 @@ settings:
         value: var(--dit-vine-hover)
       - label: accent color
         value: var(--color-accent)
+        value: var(--color-accent-2)
       - label: red
         value: var(--color-red)
       - label: orange
